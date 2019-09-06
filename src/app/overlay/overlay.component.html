@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lol Overlay Pick&Ban</title>
+    <script src='/socket.io/socket.io.js'></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <p> Team info </p>
+        </div>
+        <div class="row">
+            <div class="blueTeam col-3">
+                <div class="bluePlayerCard" id="bluePlayerOne"></div>
+                <div class="bluePlayerCard" id="bluePlayerTwo"></div>
+                <div class="bluePlayerCard" id="bluePlayerThree"></div>
+                <div class="bluePlayerCard" id="bluePlayerFour"></div>
+                <div class="bluePlayerCard" id="bluePlayerFive"></div>
+            </div>
+            <div class="redTeam offset-6 col-3">
+                <div class="redPlayerCard" id="redPlayerOne"></div>
+                <div class="redPlayerCard" id="redPlayerTwo"></div>
+                <div class="redPlayerCard" id="redPlayerThree"></div>
+                <div class="redPlayerCard" id="redPlayerFour"></div>
+                <div class="redPlayerCard" id="redPlayerFive"></div>
+            </div>
+            <div class="row">
+                <div class="blueBans">
+                    <div id="blueBanOne"></div>
+                    <div id="blueBanTwo"></div>
+                    <div id="blueBanThree"></div>
+                    <div id="blueBanFour"></div>
+                    <div id="blueBanFive"></div>
+                </div>
+                <div class="footer">
+                    <p> Champion info </p>
+                </div>
+                <div class="redBans">
+                    <div id="redBanThree"></div>
+                    <div id="redBanTwo"></div>
+                    <div id="redBanOne"></div>
+                    <div id="redBanFive"></div>
+                    <div id="redBanFour"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='/overlay.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,2091 @@
+.container {
+    margin: 0%;
+    padding: 0%;
+    min-width: 1920px;
+    max-height: 1078px;
+}
+
+.row {
+    margin: 0px;
+}
+
+.footer {
+    border: 2px solid black;
+    margin-top: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    height: 304px;
+    min-width: 1040px;
+}
+
+.header {
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    height: 186px;
+}
+
+.spellOne {
+    background-color: white;
+    height: 45px;
+    width: 45px;
+    border: 1px solid white;
+}
+
+.spellTwo {
+    margin-top: 7px;
+    background-color: white;
+    height: 45px;
+    width: 45px;
+    border: 1px solid white;
+}
+
+/*
+ * ──────────────────────────────────────────────────────────────── I ──────────
+ *   :::::: E Q U I P E   B L E U E : :  :   :    :     :        :          :
+ * ──────────────────────────────────────────────────────────────────────────
+ */
+
+.blueTeam {
+    padding-left: 0px;
+}
+
+.blueTeam, .blueBans {
+    font-size: 3em;
+    color: white;
+    text-shadow: 0px 0px 3px rgb(0, 0, 255);
+    text-align: left;
+}
+
+.bluePlayerCard {
+    height: 117px;
+    width: 440px;
+    margin-top: 1px;
+    transform: rotateY(180deg);
+    background-color: rgba(0, 0, 255, 0.3);
+    padding: 10px;
+}
+
+div.bluePlayerCard div {
+    transform: rotateY(180deg);
+}
+
+.blueBans {
+    margin-top: 13px;
+    padding-left: 0px;
+    width: 440px;
+}
+
+.blueBanOne, .blueBanTwo, .blueBanThree, .blueBanFour, .blueBanFive {
+    border: 2px solid blue;
+    margin-left: 0px;
+    width: 129px;
+    height: 128px;
+    display: inline-block;
+    background-color: rgba(0, 0, 255, 0.3);
+}
+
+/*
+ * ──────────────────────────────────────────────────────────────── II ──────────
+ *   :::::: E Q U I P E   R O U G E : :  :   :    :     :        :          :
+ * ──────────────────────────────────────────────────────────────────────────
+ */
+
+.redTeam, .redBans {
+    padding-right: 0px;
+    margin-right: 0px;
+    color: white;
+}
+
+.redPlayerCard {
+    height: 117px;
+    width: 440px;
+    margin-top: 1px;
+    margin-left: 5.3%;
+    background-color: rgba(255, 0, 0, 0.3);
+    padding: 10px;
+}
+
+.redBans {
+    margin-top: 13px;
+    width: 440px;
+    text-align: right;
+}
+
+.redBanOne, .redBanTwo, .redBanThree, .redBanFour, .redBanFive {
+    margin-top: 1px;
+    border: 2px solid red;
+    width: 129px;
+    height: 128px;
+    display: inline-block;
+    background-color: rgba(255, 0, 0, 0.4);
+}
+
+/*
+ * ────────────────────────────────────────────────────────────────────── I ──────────
+ *   :::::: S U M M O N E R   S P E L L S : :  :   :    :     :        :          :
+ * ────────────────────────────────────────────────────────────────────────────────
+ */
+
+.Barrier {
+    background-image: url('../../assets/spells/Barrier.png') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Boost {
+    background-image: url('../../assets/spells/Boost.png') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Dot {
+    background-image: url('../../assets/spells/Dot.png') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Exhaust {
+    background-image: url('../../assets/spells/Exhaust.png') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Flash {
+    background-image: url('../../assets/spells/Flash.png') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Haste {
+    background-image: url('../../assets/spells/Haste.png') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Heal {
+    background-image: url('../../assets/spells/Heal.png') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Mana {
+    background-image: url('../../assets/spells/Mana.png') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Smite {
+    background-image: url('../../assets/spells/Smite.png') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Teleport {
+    background-image: url('../../assets/spells/Teleport.png') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+/*
+ * ────────────────────────────────────────────────────────────────────────────────── II ──────────
+ *   :::::: C H A M P I O N S   B A C K G R O U N D S : :  :   :    :     :        :          :
+ * ────────────────────────────────────────────────────────────────────────────────────────────
+ */
+
+.Aatrox {
+    background-image: url('../../assets/champions/Aatrox_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Ahri {
+    background-image: url('../../assets/champions/Ahri_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Akali {
+    background-image: url('../../assets/champions/Akali_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Alistar {
+    background-image: url('../../assets/champions/Alistar_0.jpg') !important;
+    background-size: cover;
+    background-position: center center;
+}
+
+.Amumu {
+    background-image: url('../../assets/champions/Amumu_0.jpg') !important;
+    background-size: cover;
+    background-position: center center;
+}
+
+.Anivia {
+    background-image: url('../../assets/champions/Anivia_0.jpg') !important;
+    background-size: cover;
+    background-position: center center;
+}
+
+.Annie {
+    background-image: url('../../assets/champions/Annie_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Ashe {
+    background-image: url('../../assets/champions/Ashe_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.AurelionSol {
+    background-image: url('../../assets/champions/AurelionSol_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Azir {
+    background-image: url('../../assets/champions/Azir_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Bard {
+    background-image: url('../../assets/champions/Bard_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Blitzcrank {
+    background-image: url('../../assets/champions/Blitzcrank_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Brand {
+    background-image: url('../../assets/champions/Brand_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Braum {
+    background-image: url('../../assets/champions/Braum_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Caitlyn {
+    background-image: url('../../assets/champions/Caitlyn_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Camille {
+    background-image: url('../../assets/champions/Camille_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Cassiopeia {
+    background-image: url('../../assets/champions/Cassiopeia_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Chogath {
+    background-image: url('../../assets/champions/Chogath_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Corki {
+    background-image: url('../../assets/champions/Corki_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Darius {
+    background-image: url('../../assets/champions/Darius_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Diana {
+    background-image: url('../../assets/champions/Diana_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Draven {
+    background-image: url('../../assets/champions/Draven_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.DrMundo {
+    background-image: url('../../assets/champions/DrMundo_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Ekko {
+    background-image: url('../../assets/champions/Ekko_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Elise {
+    background-image: url('../../assets/champions/Elise_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Evelynn {
+    background-image: url('../../assets/champions/Evelynn_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Ezreal {
+    background-image: url('../../assets/champions/Ezreal_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.FiddleSticks {
+    background-image: url('../../assets/champions/FiddleSticks_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Fiora {
+    background-image: url('../../assets/champions/Fiora_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Fizz {
+    background-image: url('../../assets/champions/Fizz_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Galio {
+    background-image: url('../../assets/champions/Galio_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Gangplank {
+    background-image: url('../../assets/champions/Gangplank_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Garen {
+    background-image: url('../../assets/champions/Garen_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Gnar {
+    background-image: url('../../assets/champions/Gnar_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Gragas {
+    background-image: url('../../assets/champions/Gragas_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Graves {
+    background-image: url('../../assets/champions/Graves_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Hecarim {
+    background-image: url('../../assets/champions/Hecarim_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Heimerdinger {
+    background-image: url('../../assets/champions/Heimerdinger_0.jpg') !important;
+    background-size: cover;
+    background-position: center center;
+}
+
+.Illaoi {
+    background-image: url('../../assets/champions/Illaoi_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Irelia {
+    background-image: url('../../assets/champions/Irelia_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Ivern {
+    background-image: url('../../assets/champions/Ivern_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Janna {
+    background-image: url('../../assets/champions/Janna_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.JarvanIV {
+    background-image: url('../../assets/champions/JarvanIV_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Jax {
+    background-image: url('../../assets/champions/Jax_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Jayce {
+    background-image: url('../../assets/champions/Jayce_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Jhin {
+    background-image: url('../../assets/champions/Jhin_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Jinx {
+    background-image: url('../../assets/champions/Jinx_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Kaisa {
+    background-image: url('../../assets/champions/Kaisa_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Kalista {
+    background-image: url('../../assets/champions/Kalista_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Karma {
+    background-image: url('../../assets/champions/Karma_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Karthus {
+    background-image: url('../../assets/champions/Karthus_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Kassadin {
+    background-image: url('../../assets/champions/Kassadin_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Katarina {
+    background-image: url('../../assets/champions/Katarina_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Kayle {
+    background-image: url('../../assets/champions/Kayle_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Kayn {
+    background-image: url('../../assets/champions/Kayn_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Kennen {
+    background-image: url('../../assets/champions/Kennen_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Khazix {
+    background-image: url('../../assets/champions/Khazix_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Kindred {
+    background-image: url('../../assets/champions/Kindred_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Kled {
+    background-image: url('../../assets/champions/Kled_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.KogMaw {
+    background-image: url('../../assets/champions/KogMaw_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Leblanc {
+    background-image: url('../../assets/champions/Leblanc_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.LeeSin {
+    background-image: url('../../assets/champions/LeeSin_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Leona {
+    background-image: url('../../assets/champions/Leona_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Lissandra {
+    background-image: url('../../assets/champions/Lissandra_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Lucian {
+    background-image: url('../../assets/champions/Lucian_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Lulu {
+    background-image: url('../../assets/champions/Lulu_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Lux {
+    background-image: url('../../assets/champions/Lux_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Malphite {
+    background-image: url('../../assets/champions/Malphite_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Malzahar {
+    background-image: url('../../assets/champions/Malzahar_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Maokai {
+    background-image: url('../../assets/champions/Maokai_0.jpg') !important;
+    background-size: cover;
+    background-position: 65% center;
+}
+
+.MasterYi {
+    background-image: url('../../assets/champions/MasterYi_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.MissFortune {
+    background-image: url('../../assets/champions/MissFortune_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.MonkeyKing {
+    background-image: url('../../assets/champions/MonkeyKing_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Mordekaiser {
+    background-image: url('../../assets/champions/Mordekaiser_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Morgana {
+    background-image: url('../../assets/champions/Morgana_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Nami {
+    background-image: url('../../assets/champions/Nami_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Nasus {
+    background-image: url('../../assets/champions/Nasus_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Nautilus {
+    background-image: url('../../assets/champions/Nautilus_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Neeko {
+    background-image: url('../../assets/champions/Neeko_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Nidalee {
+    background-image: url('../../assets/champions/Nidalee_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Nocturne {
+    background-image: url('../../assets/champions/Nocturne_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Nunu {
+    background-image: url('../../assets/champions/Nunu_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Olaf {
+    background-image: url('../../assets/champions/Olaf_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Orianna {
+    background-image: url('../../assets/champions/Orianna_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Ornn {
+    background-image: url('../../assets/champions/Ornn_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Pantheon {
+    background-image: url('../../assets/champions/Pantheon_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Poppy {
+    background-image: url('../../assets/champions/Poppy_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Pyke {
+    background-image: url('../../assets/champions/Pyke_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Qiyana {
+    background-image: url('../../assets/champions/Qiyana_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Quinn {
+    background-image: url('../../assets/champions/Quinn_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Rakan {
+    background-image: url('../../assets/champions/Rakan_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Rammus {
+    background-image: url('../../assets/champions/Rammus_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.RekSai {
+    background-image: url('../../assets/champions/RekSai_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Renekton {
+    background-image: url('../../assets/champions/Renekton_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Rengar {
+    background-image: url('../../assets/champions/Rengar_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Riven {
+    background-image: url('../../assets/champions/Riven_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Rumble {
+    background-image: url('../../assets/champions/Rumble_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Ryze {
+    background-image: url('../../assets/champions/Ryze_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Sejuani {
+    background-image: url('../../assets/champions/Sejuani_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Shaco {
+    background-image: url('../../assets/champions/Shaco_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Shen {
+    background-image: url('../../assets/champions/Shen_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Shyvana {
+    background-image: url('../../assets/champions/Shyvana_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Singed {
+    background-image: url('../../assets/champions/Singed_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Sion {
+    background-image: url('../../assets/champions/Sion_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Sivir {
+    background-image: url('../../assets/champions/Sivir_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Skarner {
+    background-image: url('../../assets/champions/Skarner_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Sona {
+    background-image: url('../../assets/champions/Sona_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Soraka {
+    background-image: url('../../assets/champions/Soraka_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Swain {
+    background-image: url('../../assets/champions/Swain_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Sylas {
+    background-image: url('../../assets/champions/Sylas_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Syndra {
+    background-image: url('../../assets/champions/Syndra_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.TahmKench {
+    background-image: url('../../assets/champions/TahmKench_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Taliyah {
+    background-image: url('../../assets/champions/Taliyah_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Talon {
+    background-image: url('../../assets/champions/Talon_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Taric {
+    background-image: url('../../assets/champions/Taric_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Teemo {
+    background-image: url('../../assets/champions/Teemo_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Thresh {
+    background-image: url('../../assets/champions/Thresh_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Tristana {
+    background-image: url('../../assets/champions/Tristana_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Trundle {
+    background-image: url('../../assets/champions/Trundle_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Tryndamere {
+    background-image: url('../../assets/champions/Tryndamere_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.TwistedFate {
+    background-image: url('../../assets/champions/TwistedFate_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Twitch {
+    background-image: url('../../assets/champions/Twitch_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Udyr {
+    background-image: url('../../assets/champions/Udyr_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Urgot {
+    background-image: url('../../assets/champions/Urgot_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Varus {
+    background-image: url('../../assets/champions/Varus_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Vayne {
+    background-image: url('../../assets/champions/Vayne_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Veigar {
+    background-image: url('../../assets/champions/Veigar_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Velkoz {
+    background-image: url('../../assets/champions/Velkoz_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Vi {
+    background-image: url('../../assets/champions/Vi_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Viktor {
+    background-image: url('../../assets/champions/Viktor_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Vladimir {
+    background-image: url('../../assets/champions/Vladimir_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Volibear {
+    background-image: url('../../assets/champions/Volibear_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Volibear {
+    background-image: url('../../assets/champions/Volibear_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Warwick {
+    background-image: url('../../assets/champions/Warwick_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Xayah {
+    background-image: url('../../assets/champions/Xayah_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Xerath {
+    background-image: url('../../assets/champions/Xerath_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.XinZhao {
+    background-image: url('../../assets/champions/XinZhao_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Yasuo {
+    background-image: url('../../assets/champions/Yasuo_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Yorick {
+    background-image: url('../../assets/champions/Yorick_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Yuumi {
+    background-image: url('../../assets/champions/Yuumi_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Zac {
+    background-image: url('../../assets/champions/Zac_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Zed {
+    background-image: url('../../assets/champions/Zed_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Ziggs {
+    background-image: url('../../assets/champions/Ziggs_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Zilean {
+    background-image: url('../../assets/champions/Zilean_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Zoe {
+    background-image: url('../../assets/champions/Zoe_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+.Zyra {
+    background-image: url('../../assets/champions/Zyra_0.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+/*
+ * ────────────────────────────────────────────────────────────────────── IV ──────────
+ *   :::::: B A N S   B A C K G R O U N D : :  :   :    :     :        :          :
+ * ────────────────────────────────────────────────────────────────────────────────
+ */
+
+.banAatrox {
+    background-image: url('../../assets/tiles/Aat-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banAhri {
+    background-image: url('../../assets/tiles/Ahr-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banAkali {
+    background-image: url('../../assets/tiles/Aka-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banAlistar {
+    background-image: url('../../assets/tiles/Ali-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banAmumu {
+    background-image: url('../../assets/tiles/Amu-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banAnivia {
+    background-image: url('../../assets/tiles/Ani-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banAnnie {
+    background-image: url('../../assets/tiles/Ann-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banAshe {
+    background-image: url('../../assets/tiles/Ash-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banAurelionSol {
+    background-image: url('../../assets/tiles/Aur-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banAzir {
+    background-image: url('../../assets/tiles/Azi-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banBard {
+    background-image: url('../../assets/tiles/Bar-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banBlitzcrank {
+    background-image: url('../../assets/tiles/Bli-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banBrand {
+    background-image: url('../../assets/tiles/Bran-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banBraum {
+    background-image: url('../../assets/tiles/Bra-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banCaitlyn {
+    background-image: url('../../assets/tiles/Cai-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banCamille {
+    background-image: url('../../assets/tiles/Cam-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banCassiopeia {
+    background-image: url('../../assets/tiles/Cas-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banChogath {
+    background-image: url('../../assets/tiles/Cho-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banCorki {
+    background-image: url('../../assets/tiles/Cor-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banDarius {
+    background-image: url('../../assets/tiles/Dar-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banDiana {
+    background-image: url('../../assets/tiles/Dia-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banDraven {
+    background-image: url('../../assets/tiles/Dra-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banDrMundo {
+    background-image: url('../../assets/tiles/DrM-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banEkko {
+    background-image: url('../../assets/tiles/Ekk-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banElise {
+    background-image: url('../../assets/tiles/Eli-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banEvelynn {
+    background-image: url('../../assets/tiles/Eve-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banEzreal {
+    background-image: url('../../assets/tiles/Ezr-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banFiddleSticks {
+    background-image: url('../../assets/tiles/Fid-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banFiora {
+    background-image: url('../../assets/tiles/Fio-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banFizz {
+    background-image: url('../../assets/tiles/Fiz-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banGalio {
+    background-image: url('../../assets/tiles/Gal-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banGangplank {
+    background-image: url('../../assets/tiles/Gan-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banGaren {
+    background-image: url('../../assets/tiles/Gar-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banGnar {
+    background-image: url('../../assets/tiles/Gna-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banGragas {
+    background-image: url('../../assets/tiles/Gra-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banGraves {
+    background-image: url('../../assets/tiles/Grav-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banHecarim {
+    background-image: url('../../assets/tiles/Hec-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banHeimerdinger {
+    background-image: url('../../assets/tiles/Hei-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banIllaoi {
+    background-image: url('../../assets/tiles/Ill-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banIrelia {
+    background-image: url('../../assets/tiles/Ire-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banIvern {
+    background-image: url('../../assets/tiles/Ive-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banJanna {
+    background-image: url('../../assets/tiles/Jan-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banJarvanIV {
+    background-image: url('../../assets/tiles/Jar-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banJax {
+    background-image: url('../../assets/tiles/Jax-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banJayce {
+    background-image: url('../../assets/tiles/Jay-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banJhin {
+    background-image: url('../../assets/tiles/Jhi-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banJinx {
+    background-image: url('../../assets/tiles/Jin-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banKaisa {
+    background-image: url('../../assets/tiles/Kai-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banKalista {
+    background-image: url('../../assets/tiles/Kal-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banKarma {
+    background-image: url('../../assets/tiles/Kar-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banKarthus {
+    background-image: url('../../assets/tiles/Kart-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banKassadin {
+    background-image: url('../../assets/tiles/Kas-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banKatarina {
+    background-image: url('../../assets/tiles/Kat-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banKayle {
+    background-image: url('../../assets/tiles/Kay-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banKayn {
+    background-image: url('../../assets/tiles/Kayn-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banKennen {
+    background-image: url('../../assets/tiles/Ken-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banKhazix {
+    background-image: url('../../assets/tiles/Kha-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banKindred {
+    background-image: url('../../assets/tiles/Kin-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banKled {
+    background-image: url('../../assets/tiles/Kle-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banKogMaw {
+    background-image: url('../../assets/tiles/Kog-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banLeblanc {
+    background-image: url('../../assets/tiles/Leb-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banLeeSin {
+    background-image: url('../../assets/tiles/Lee-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banLeona {
+    background-image: url('../../assets/tiles/Leo-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banLissandra {
+    background-image: url('../../assets/tiles/Lis-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banLucian {
+    background-image: url('../../assets/tiles/Luc-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banLulu {
+    background-image: url('../../assets/tiles/Lul-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banLux {
+    background-image: url('../../assets/tiles/Lux-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banMalphite {
+    background-image: url('../../assets/tiles/Mal-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banMalzahar {
+    background-image: url('../../assets/tiles/Malz-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banMaokai {
+    background-image: url('../../assets/tiles/Mao-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banMasterYi {
+    background-image: url('../../assets/tiles/Mas-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banMissFortune {
+    background-image: url('../../assets/tiles/Mis-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banMonkeyKing {
+    background-image: url('../../assets/tiles/Mon-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banMordekaiser {
+    background-image: url('../../assets/tiles/Mor-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banMorgana {
+    background-image: url('../../assets/tiles/Morg-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banNami {
+    background-image: url('../../assets/tiles/Nam-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banNasus {
+    background-image: url('../../assets/tiles/Nas-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banNautilus {
+    background-image: url('../../assets/tiles/Nau-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banNeeko {
+    background-image: url('../../assets/tiles/Nee-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banNidalee {
+    background-image: url('../../assets/tiles/Nid-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banNocturne {
+    background-image: url('../../assets/tiles/Noc-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banNunu {
+    background-image: url('../../assets/tiles/Nun-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banOlaf {
+    background-image: url('../../assets/tiles/Ola-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banOrianna {
+    background-image: url('../../assets/tiles/Ori-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banOrnn {
+    background-image: url('../../assets/tiles/Orn-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banPantheon {
+    background-image: url('../../assets/tiles/Pan-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banPoppy {
+    background-image: url('../../assets/tiles/Pop-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banPyke {
+    background-image: url('../../assets/tiles/Pyk-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banQiyana {
+    background-image: url('../../assets/tiles/Qiy-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banQuinn {
+    background-image: url('../../assets/tiles/Qui-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banRakan {
+    background-image: url('../../assets/tiles/Rak-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banRammus {
+    background-image: url('../../assets/tiles/Ram-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banRekSai {
+    background-image: url('../../assets/tiles/Rek-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banRenekton {
+    background-image: url('../../assets/tiles/Ren-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banRengar {
+    background-image: url('../../assets/tiles/Reng-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banRiven {
+    background-image: url('../../assets/tiles/Riv-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banRumble {
+    background-image: url('../../assets/tiles/Rum-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banRyze {
+    background-image: url('../../assets/tiles/Ryz-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banSejuani {
+    background-image: url('../../assets/tiles/Sej-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banShaco {
+    background-image: url('../../assets/tiles/Sha-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banShen {
+    background-image: url('../../assets/tiles/She-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banShyvana {
+    background-image: url('../../assets/tiles/Shy-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banSinged {
+    background-image: url('../../assets/tiles/Sin-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banSion {
+    background-image: url('../../assets/tiles/Sio-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banSivir {
+    background-image: url('../../assets/tiles/Siv-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banSkarner {
+    background-image: url('../../assets/tiles/Ska-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banSona {
+    background-image: url('../../assets/tiles/Son-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banSoraka {
+    background-image: url('../../assets/tiles/Sor-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banSwain {
+    background-image: url('../../assets/tiles/Swa-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banSylas {
+    background-image: url('../../assets/tiles/Syl-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banSyndra {
+    background-image: url('../../assets/tiles/Syn-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banTahmKench {
+    background-image: url('../../assets/tiles/Tah-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banTaliyah {
+    background-image: url('../../assets/tiles/Tal-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banTalon {
+    background-image: url('../../assets/tiles/Talo-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banTaric {
+    background-image: url('../../assets/tiles/Tar-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banTeemo {
+    background-image: url('../../assets/tiles/Tee-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banThresh {
+    background-image: url('../../assets/tiles/Thr-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banTristana {
+    background-image: url('../../assets/tiles/Tri-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banTrundle {
+    background-image: url('../../assets/tiles/Tru-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banTryndamere {
+    background-image: url('../../assets/tiles/Try-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banTwistedFate {
+    background-image: url('../../assets/tiles/Twi-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banTwitch {
+    background-image: url('../../assets/tiles/Twit-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banUdyr {
+    background-image: url('../../assets/tiles/Udy-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banUrgot {
+    background-image: url('../../assets/tiles/Urg-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banVarus {
+    background-image: url('../../assets/tiles/Var-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banVayne {
+    background-image: url('../../assets/tiles/Vay-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banVeigar {
+    background-image: url('../../assets/tiles/Vei-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banVelkoz {
+    background-image: url('../../assets/tiles/Vel-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banVi {
+    background-image: url('../../assets/tiles/Vi_-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banViktor {
+    background-image: url('../../assets/tiles/Vik-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banVladimir {
+    background-image: url('../../assets/tiles/Vla-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banVolibear {
+    background-image: url('../../assets/tiles/Vol-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banWarwick {
+    background-image: url('../../assets/tiles/War-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banXayah {
+    background-image: url('../../assets/tiles/Xay-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banXerath {
+    background-image: url('../../assets/tiles/Xer-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banXinZhao {
+    background-image: url('../../assets/tiles/Xin-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banYasuo {
+    background-image: url('../../assets/tiles/Yas-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banYorick {
+    background-image: url('../../assets/tiles/Yor-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banYuumi {
+    background-image: url('../../assets/tiles/Yuu-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banZac {
+    background-image: url('../../assets/tiles/Zac-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banZed {
+    background-image: url('../../assets/tiles/Zed-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banZiggs {
+    background-image: url('../../assets/tiles/Zig-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banZilean {
+    background-image: url('../../assets/tiles/Zil-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banZoe {
+    background-image: url('../../assets/tiles/Zoe-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}
+
+.banZyra {
+    background-image: url('../../assets/tiles/Zyr-mini.jpg');
+    background-size: cover;
+    filter: grayscale(80%);
+    background-position: top center;
+}

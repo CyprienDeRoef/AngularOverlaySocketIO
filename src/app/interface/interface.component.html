@@ -1,0 +1,629 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>LoL Overlay Pick&Ban</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <script src='interface.js'></script>
+    <script src='http://localhost:4200/socket.io/socket.io.js'></script>
+    <div class="container">
+
+        <!--
+    -- ────────────────────────────────────────────────── 0 ──────────
+    --   :::::: T E A M S : :  :   :    :     :        :          :
+    -- ────────────────────────────────────────────────────────────
+    -->
+
+
+
+        <div class="row teams justify-content-around">
+            <div class="col-5 mt-1 ml-1 blueTeam">
+                <div class=" row justify-content-around align-items-center">
+                    <h2> Team name :</h2>
+                    <input class="blueTeamName col-6" placeholder="Blue team name">
+                    <button type="button" class="col-2 mt-1 mb-1 p-0" id="blueTeamNameBtn">Submit</button>
+                </div>
+            </div>
+
+
+
+            <div class="col-5 mt-1 mr-1 redTeam">
+                <div class="row justify-content-around align-items-center">
+                    <h2> Team name :</h2>
+                    <input class="redTeamName col-6" placeholder="Red team name">
+                    <button type="button" class="col-2 mt-1 mb-1 p-0" id="redTeamNameBtn">Submit</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--
+        -- ────────────────────────────────────────────────────────── I ──────────
+        --   :::::: F I R S T   R O W : :  :   :    :     :        :          :
+        -- ────────────────────────────────────────────────────────────────────
+        -->
+
+
+
+        <div class="row justify-content-between">
+            <div class="bluePlayerCard col-3" id="bluePlayerOne">
+                <h6>Player one</h6>
+                <div class="row box justify-content-between align-items-center">
+                    <p>Player name :</p>
+                    <input id="bluePlayerOneName" placeholder="Player name">
+                </div>
+                <div class="row box justify-content-between align-items-center champion">
+                    <p>Champion :</p>
+                    <select id="bluePlayerOneSelect" placeholder="Champion">
+                        <option *ngFor="let champion of champions" value="champion.name">
+                            {{ champion.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row box justify-content-between align-items-center spellOne">
+                    <p>Spell n°1 :</p>
+                    <select id="bluePlayerOneSpellOneSelect" placeholder="Spell One">
+                        <option *ngFor="let spell of spells">
+                            {{ spell.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row box justify-content-between align-items-center spellTwo">
+                    <p>Spell n°2 :</p>
+                    <select id="bluePlayerOneSpellTwoSelect" placeholder="Spell Two">
+                        <option *ngFor="let spell of spells">
+                            {{ spell.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row justify-content-between align-items-end">
+                    <button type="button" class="col-4 offset-4 mt-1 mb-1 p-0" id="bluePlayerOneBtn">Submit</button>
+                </div>
+            </div>
+
+
+
+            <div class="blueBanOne col-2">
+                <h6>Ban one</h6>
+                <div class="box justify-content-between align-items-center mt-5">
+                    <select id="blueBanOneSelect" placeholder="">
+                        <option *ngFor="let champion of champions" value="champion.name">
+                            {{ champion.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row justify-content-between mt-5 align-items-end">
+                    <button type="button" class="col-4 offset-4 mt-1 mb-1 p-0" id="blueBanOneBtn">Submit</button>
+                </div>
+            </div>
+
+
+
+            <div class="redBanOne col-2">
+                <h6>Ban one</h6>
+                <div class="box justify-content-between align-items-center mt-5">
+                    <select id="redBanOneSelect" placeholder="">
+                        <option *ngFor="let champion of champions" value="champion.name">
+                            {{ champion.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row justify-content-between mt-5 align-items-end">
+                    <button type="button" class="col-4 offset-4 mt-1 mb-1 p-0" id="redBanOneBtn">Submit</button>
+                </div>
+            </div>
+
+
+
+            <div class="redPlayerCard col-3" id="redPlayerOne">
+                <h6>Player one</h6>
+                <div class="row box justify-content-between align-items-center">
+                    <p>Player name :</p>
+                    <input id="redPlayerOneName" placeholder="Player name">
+                </div>
+                <div class="row box justify-content-between align-items-center champion">
+                    <p>Champion :</p>
+                    <select id="redPlayerOneSelect" placeholder="Champion">
+                        <option *ngFor="let champion of champions" value="champion.name">
+                            {{ champion.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row box justify-content-between align-items-center spellOne">
+                    <p>Spell n°1 :</p>
+                    <select id="redPlayerOneSpellOneSelect" placeholder="Spell One">
+                        <option *ngFor="let spell of spells">
+                            {{ spell.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row box justify-content-between align-items-center spellTwo">
+                    <p>Spell n°2 :</p>
+                    <select id="redPlayerOneSpellTwoSelect" placeholder="Spell Two">
+                        <option *ngFor="let spell of spells">
+                            {{ spell.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row justify-content-between align-items-end">
+                    <button type="button" class="col-4 offset-4 mt-1 mb-1 p-0" id="redPlayerOneBtn">Submit</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--
+        -- ──────────────────────────────────────────────────────────── II ──────────
+        --   :::::: S E C O N D   R O W : :  :   :    :     :        :          :
+        -- ──────────────────────────────────────────────────────────────────────
+        -->
+
+
+
+        <div class="row justify-content-between">
+            <div class="bluePlayerCard col-3" id="bluePlayerTwo">
+                <h6>Player two</h6>
+                <div class="row box justify-content-between align-items-center">
+                    <p>Player name :</p>
+                    <input id="bluePlayerTwoName" placeholder="Player name">
+                </div>
+                <div class="row box justify-content-between align-items-center champion">
+                    <p>Champion :</p>
+                    <select id="bluePlayerTwoSelect" placeholder="Champion">
+                        <option *ngFor="let champion of champions" value="champion.name">
+                            {{ champion.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row box justify-content-between align-items-center spellOne">
+                    <p>Spell n°1 :</p>
+                    <select id="bluePlayerTwoSpellOneSelect" placeholder="Spell One">
+                        <option *ngFor="let spell of spells">
+                            {{ spell.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row box justify-content-between align-items-center spellTwo">
+                    <p>Spell n°2 :</p>
+                    <select id="bluePlayerTwoSpellTwoSelect" placeholder="Spell Two">
+                        <option *ngFor="let spell of spells">
+                            {{ spell.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row justify-content-between align-items-end">
+                    <button type="button" class="col-4 offset-4 mt-1 mb-1 p-0" id="bluePlayerTwoBtn">Submit</button>
+                </div>
+            </div>
+
+
+
+            <div class="blueBanTwo col-2">
+                <h6>Ban two</h6>
+                <div class="box justify-content-between align-items-center mt-5">
+                    <select id="blueBanTwoSelect" placeholder="">
+                        <option *ngFor="let champion of champions" value="champion.name">
+                            {{ champion.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row justify-content-between mt-5 align-items-end">
+                    <button type="button" class="col-4 offset-4 mt-1 mb-1 p-0" id="blueBanTwoBtn">Submit</button>
+                </div>
+            </div>
+
+
+
+            <div class="redBanTwo col-2">
+                <h6>Ban two</h6>
+                <div class="box justify-content-between align-items-center mt-5">
+                    <select id="redBanThreeSelect" placeholder="">
+                        <option *ngFor="let champion of champions" value="champion.name">
+                            {{ champion.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row justify-content-between mt-5 align-items-end">
+                    <button type="button" class="col-4 offset-4 mt-1 mb-1 p-0" id="redBanThreeBtn">Submit</button>
+                </div>
+            </div>
+
+
+
+            <div class="redPlayerCard col-3" id="redPlayerTwo">
+                <h6>Player two</h6>
+                <div class="row box justify-content-between align-items-center">
+                    <p>Player name :</p>
+                    <input id="redPlayerTwoName" placeholder="Player name">
+                </div>
+                <div class="row box justify-content-between align-items-center champion">
+                    <p>Champion :</p>
+                    <select id="redPlayerTwoSelect" placeholder="Champion">
+                        <option *ngFor="let champion of champions" value="champion.name">
+                            {{ champion.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row box justify-content-between align-items-center spellOne">
+                    <p>Spell n°1 :</p>
+                    <select id="redPlayerTwoSpellOneSelect" placeholder="Spell One">
+                        <option *ngFor="let spell of spells">
+                            {{ spell.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row box justify-content-between align-items-center spellTwo">
+                    <p>Spell n°2 :</p>
+                    <select id="redPlayerTwoSpellTwoSelect" placeholder="Spell Two">
+                        <option *ngFor="let spell of spells">
+                            {{ spell.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row justify-content-between align-items-end">
+                    <button type="button" class="col-4 offset-4 mt-1 mb-1 p-0" id="redPlayerTwoBtn">Submit</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--
+        -- ────────────────────────────────────────────────────────── III ──────────
+        --   :::::: T H I R D   R O W : :  :   :    :     :        :          :
+        -- ────────────────────────────────────────────────────────────────────
+        -->
+
+
+
+        <div class="row justify-content-between">
+            <div class="bluePlayerCard col-3" id="bluePlayerThree">
+                <h6>Player three</h6>
+                <div class="row box justify-content-between align-items-center">
+                    <p>Player name :</p>
+                    <input id="bluePlayerThreeName" placeholder="Player name">
+                </div>
+                <div class="row box justify-content-between align-items-center champion">
+                    <p>Champion :</p>
+                    <select id="bluePlayerThreeSelect" placeholder="Champion">
+                        <option *ngFor="let champion of champions" value="champion.name">
+                            {{ champion.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row box justify-content-between align-items-center spellOne">
+                    <p>Spell n°1 :</p>
+                    <select id="bluePlayerThreeSpellOneSelect" placeholder="Spell One">
+                        <option *ngFor="let spell of spells">
+                            {{ spell.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row box justify-content-between align-items-center spellTwo">
+                    <p>Spell n°2 :</p>
+                    <select id="bluePlayerThreeSpellTwoSelect" placeholder="Spell Two">
+                        <option *ngFor="let spell of spells">
+                            {{ spell.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row justify-content-between align-items-end">
+                    <button type="button" class="col-4 offset-4 mt-1 mb-1 p-0" id="bluePlayerThreeBtn">Submit</button>
+                </div>
+            </div>
+
+
+
+            <div class="blueBanThree col-2">
+                <h6>Ban three</h6>
+                <div class="box justify-content-between align-items-center mt-5">
+                    <select id="blueBanThreeSelect" placeholder="">
+                        <option *ngFor="let champion of champions" value="champion.name">
+                            {{ champion.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row justify-content-between mt-5 align-items-end">
+                    <button type="button" class="col-4 offset-4 mt-1 mb-1 p-0" id="blueBanThreeBtn">Submit</button>
+                </div>
+            </div>
+
+
+
+            <div class="redBanThree col-2">
+                <h6>Ban three</h6>
+                <div class="box justify-content-between align-items-center mt-5">
+                    <select id="redBanThreeSelect" placeholder="">
+                        <option *ngFor="let champion of champions" value="champion.name">
+                            {{ champion.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row justify-content-between mt-5 align-items-end">
+                    <button type="button" class="col-4 offset-4 mt-1 mb-1 p-0" id="redBanThreeBtn">Submit</button>
+                </div>
+            </div>
+
+
+
+            <div class="redPlayerCard col-3" id="redPlayerThree">
+                <h6>Player three</h6>
+                <div class="row box justify-content-between align-items-center">
+                    <p>Player name :</p>
+                    <input id="redPlayerThreeName" placeholder="Player name">
+                </div>
+                <div class="row box justify-content-between align-items-center champion">
+                    <p>Champion :</p>
+                    <select id="redPlayerThreeSelect" placeholder="Champion">
+                        <option *ngFor="let champion of champions" value="champion.name">
+                            {{ champion.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row box justify-content-between align-items-center spellOne">
+                    <p>Spell n°1 :</p>
+                    <select id="redPlayerThreeSpellOneSelect" placeholder="Spell One">
+                        <option *ngFor="let spell of spells">
+                            {{ spell.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row box justify-content-between align-items-center spellTwo">
+                    <p>Spell n°2 :</p>
+                    <select id="redPlayerThreeSpellTwoSelect" placeholder="Spell Two">
+                        <option *ngFor="let spell of spells">
+                            {{ spell.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row justify-content-between align-items-end">
+                    <button type="button" class="col-4 offset-4 mt-1 mb-1 p-0" id="redPlayerThreeBtn">Submit</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--
+        -- ──────────────────────────────────────────────────────────── IV ──────────
+        --   :::::: F O U R T H   R O W : :  :   :    :     :        :          :
+        -- ──────────────────────────────────────────────────────────────────────
+        -->
+
+
+
+        <div class="row justify-content-between">
+            <div class="bluePlayerCard col-3" id="bluePlayerFour">
+                <h6>Player four</h6>
+                <div class="row box justify-content-between align-items-center">
+                    <p>Player name :</p>
+                    <input id="bluePlayerFourName" placeholder="Player name">
+                </div>
+                <div class="row box justify-content-between align-items-center champion">
+                    <p>Champion :</p>
+                    <select id="bluePlayerFourSelect" placeholder="Champion">
+                        <option *ngFor="let champion of champions" value="champion.name">
+                            {{ champion.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row box justify-content-between align-items-center spellOne">
+                    <p>Spell n°1 :</p>
+                    <select id="bluePlayerFourSpellOneSelect" placeholder="Spell One">
+                        <option *ngFor="let spell of spells">
+                            {{ spell.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row box justify-content-between align-items-center spellTwo">
+                    <p>Spell n°2 :</p>
+                    <select id="bluePlayerFourSpellTwoSelect" placeholder="Spell Two">
+                        <option *ngFor="let spell of spells">
+                            {{ spell.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row justify-content-between align-items-end">
+                    <button type="button" class="col-4 offset-4 mt-1 mb-1 p-0" id="bluePlayerFourBtn">Submit</button>
+                </div>
+            </div>
+
+
+
+            <div class="blueBanFour col-2">
+                <h6>Ban four</h6>
+                <div class="box justify-content-between align-items-center mt-5">
+                    <select id="blueBanFourSelect" placeholder="">
+                        <option *ngFor="let champion of champions" value="champion.name">
+                            {{ champion.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row justify-content-between mt-5 align-items-end">
+                    <button type="button" class="col-4 offset-4 mt-1 mb-1 p-0" id="blueBanFourBtn">Submit</button>
+                </div>
+            </div>
+
+
+
+            <div class="redBanFour col-2">
+                <h6>Ban four</h6>
+                <div class="box justify-content-between align-items-center mt-5">
+                    <select id="redBanFourSelect" placeholder="">
+                        <option *ngFor="let champion of champions" value="champion.name">
+                            {{ champion.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row justify-content-between mt-5 align-items-end">
+                    <button type="button" class="col-4 offset-4 mt-1 mb-1 p-0" id="redBanFourBtn">Submit</button>
+                </div>
+            </div>
+
+
+
+            <div class="redPlayerCard col-3" id="redPlayerFour">
+                <h6>Player four</h6>
+                <div class="row box justify-content-between align-items-center">
+                    <p>Player name :</p>
+                    <input id="redPlayerFourName" placeholder="Player name">
+                </div>
+                <div class="row box justify-content-between align-items-center champion">
+                    <p>Champion :</p>
+                    <select id="redPlayerFourSelect" placeholder="Champion">
+                        <option *ngFor="let champion of champions" value="champion.name">
+                            {{ champion.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row box justify-content-between align-items-center spellOne">
+                    <p>Spell n°1 :</p>
+                    <select id="redPlayerFourSpellOneSelect" placeholder="Spell One">
+                        <option *ngFor="let spell of spells">
+                            {{ spell.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row box justify-content-between align-items-center spellTwo">
+                    <p>Spell n°2 :</p>
+                    <select id="redPlayerFourSpellTwoSelect" placeholder="Spell Two">
+                        <option *ngFor="let spell of spells">
+                            {{ spell.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row justify-content-between align-items-end">
+                    <button type="button" class="col-4 offset-4 mt-1 mb-1 p-0" id="redPlayerFourBtn">Submit</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--
+        -- ────────────────────────────────────────────────────────── V ──────────
+        --   :::::: F I F T H   R O W : :  :   :    :     :        :          :
+        -- ────────────────────────────────────────────────────────────────────
+        -->
+
+
+
+        <div class="row justify-content-between">
+            <div class="bluePlayerCard col-3" id="bluePlayerFive">
+                <h6>Player five</h6>
+                <div class="row box justify-content-between align-items-center">
+                    <p>Player name :</p>
+                    <input id="bluePlayerFiveName" placeholder="Player name">
+                </div>
+                <div class="row box justify-content-between align-items-center champion">
+                    <p>Champion :</p>
+                    <select id="bluePlayerFiveSelect" placeholder="Champion">
+                        <option *ngFor="let champion of champions" value="champion.name">
+                            {{ champion.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row box justify-content-between align-items-center spellOne">
+                    <p>Spell n°1 :</p>
+                    <select id="bluePlayerFiveSpellOneSelect" placeholder="Spell One">
+                        <option *ngFor="let spell of spells">
+                            {{ spell.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row box justify-content-between align-items-center spellTwo">
+                    <p>Spell n°2 :</p>
+                    <select id="bluePlayerFiveSpellTwoSelect" placeholder="Spell Two">
+                        <option *ngFor="let spell of spells">
+                            {{ spell.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row justify-content-between align-items-end">
+                    <button type="button" class="col-4 offset-4 mt-1 mb-1 p-0" id="bluePlayerFiveBtn">Submit</button>
+                </div>
+            </div>
+
+
+
+            <div class="blueBanFive col-2">
+                <h6>Ban five</h6>
+                <div class="box justify-content-between align-items-center mt-5">
+                    <select id="blueBanFiveSelect" placeholder="">
+                        <option *ngFor="let champion of champions" value="champion.name">
+                            {{ champion.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row justify-content-between mt-5 align-items-end">
+                    <button type="button" class="col-4 offset-4 mt-1 mb-1 p-0" id="blueBanFiveBtn">Submit</button>
+                </div>
+            </div>
+
+
+
+            <div class="redBanFive col-2">
+                <h6>Ban five</h6>
+                <div class="box justify-content-between align-items-center mt-5">
+                    <select id="redBanFiveSelect" placeholder="">
+                        <option *ngFor="let champion of champions" value="champion.name">
+                            {{ champion.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row justify-content-between mt-5 align-items-end">
+                    <button type="button" class="col-4 offset-4 mt-1 mb-1 p-0" id="redBanFiveBtn">Submit</button>
+                </div>
+            </div>
+
+
+
+            <div class="redPlayerCard col-3" id="redPlayerFive">
+                <h6>Player five</h6>
+                <div class="row box justify-content-between align-items-center">
+                    <p>Player name :</p>
+                    <input id="redPlayerFiveName" placeholder="Player name">
+                </div>
+                <div class="row box justify-content-between align-items-center champion">
+                    <p>Champion :</p>
+                    <select id="redPlayerFiveSelect" placeholder="Champion">
+                        <option *ngFor="let champion of champions" value="champion.name">
+                            {{ champion.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row box justify-content-between align-items-center spellOne">
+                    <p>Spell n°1 :</p>
+                    <select id="redPlayerFiveSpellOneSelect" placeholder="Spell One">
+                        <option *ngFor="let spell of spells">
+                            {{ spell.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row box justify-content-between align-items-center spellTwo">
+                    <p>Spell n°2 :</p>
+                    <select id="redPlayerFiveSpellTwoSelect" placeholder="Spell Two">
+                        <option *ngFor="let spell of spells">
+                            {{ spell.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="row justify-content-between align-items-end">
+                    <button type="button" class="col-4 offset-4 mt-1 mb-1 p-0" id="redPlayerFiveBtn">Submit</button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>

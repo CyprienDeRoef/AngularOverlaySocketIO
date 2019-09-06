@@ -1,0 +1,105 @@
+* {
+    font-size: 0.98em;
+}
+
+.teams {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.container {
+    margin: 0%;
+    padding: 0%;
+    min-width: 100%;
+    max-height: 100%;
+}
+
+button {
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
+}
+
+.box {
+    margin-top: 5px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.mt-5 {
+    margin-top: 4%;
+}
+
+/*
+ * ──────────────────────────────────────────────────────────────── I ──────────
+ *   :::::: E Q U I P E   B L E U E : :  :   :    :     :        :          :
+ * ──────────────────────────────────────────────────────────────────────────
+ */
+
+.blueTeam {
+    height: 50px;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 255, 0.5);
+    text-align: center;
+    border-radius: 7px;
+    align-items: center;
+    padding: 0px;
+}
+
+.bluePlayerCard {
+    border-radius: 7px;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 255, 0.5);
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+}
+
+.blueBanOne, .blueBanTwo, .blueBanThree, .blueBanFour, .blueBanFive {
+    border-radius: 7px;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 255, 0.5);
+    text-align: center;
+    align-items: center;
+    margin: 5px;
+}
+
+/*
+ * ──────────────────────────────────────────────────────────────── II ──────────
+ *   :::::: E Q U I P E   R O U G E : :  :   :    :     :        :          :
+ * ──────────────────────────────────────────────────────────────────────────
+ */
+
+.redTeam {
+    height: 50px;
+    border-radius: 7px;
+    border: 1px solid black;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.redPlayerCard {
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 7px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 5px;
+}
+
+.redBanOne, .redBanTwo, .redBanThree, .redBanFour, .redBanFive {
+    border-radius: 7px;
+    text-align: center;
+    margin: 5px;
+    border: 1px solid black;
+    background-color: rgba(255, 0, 0, 0.5);
+}
